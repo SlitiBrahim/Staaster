@@ -1,17 +1,9 @@
 package main
 
 import (
-	"log"
-
-	"github.com/pocketbase/pocketbase"
+	"github.com/slitibrahim/staaster/api"
 )
 
 func main() {
-	log.Println("hello")
-
-	app := pocketbase.New()
-
-	if err := app.Start(); err != nil {
-		log.Fatal(err)
-	}
+	api.Start()
 }
