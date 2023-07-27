@@ -20,7 +20,7 @@ COPY . .
 RUN go build -o staaster .
 
 # This container exposes port 8080 to the outside world
-EXPOSE 8080
+EXPOSE 80 443
 
 # Run the binary program produced by `go install`
 CMD ["./staaster", "serve"]
